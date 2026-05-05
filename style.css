@@ -1,0 +1,302 @@
+*{
+  margin:0px;
+}
+
+body{
+  background:#0015FF;
+  color:white;
+  font-family:Roboto;
+  overflow:auto;
+}
+.container{
+  width:100vw;
+  height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:60px 50px 1fr 50px;
+  grid-template-areas:
+  "header header"
+  "navbar navbar"
+  "content content"
+  "footer footer"
+  
+  ;
+
+}
+.header{
+  background:#1C0770;
+  grid-area:header;
+  font-size:25px;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.navbar{
+  background:#229C00;
+  grid-area:navbar;
+  position:static;
+  top:0px;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  overflow:auto;
+}
+.content{
+  background:#F0F0F0;
+  color:black;
+  grid-area:content;
+  text-align:center;
+}
+.footer{
+  background:#140038;
+  grid-area:footer;
+  position:fixed;
+  bottom:0px;
+}
+.logo{
+  margin-top:-14px;
+     font-size:32px;
+     
+     background:transparent;
+     text-transform:uppercase;
+     font-family:cursive;
+     letter-spacing:1.8px;
+     text-decoration:underline 2px solid black;
+     
+     border-radius:60px;
+     
+    }
+    span{
+      text-shadow:3px 3px 10px black;
+      font-weight:700;
+    }
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      margin:8px;
+      font-size:30px;
+      
+      font-weight:400;
+    }
+    a{
+      text-decoration:none;
+      color:white;
+      border:1px solid black;
+      border-radius:40px;
+      padding:4px;
+    }
+    a:hover{
+      color:red;
+      background:#FFC708;
+    }
+    .img{
+      width:100%;
+      height:30vh;
+      background:url("/school project/aranda.jpg.jpg") no-repeat center/cover;
+      animation:all 15s ease infinite;
+    }
+@keyframes all{
+  from{
+  background:url("/school project/aranda.jpg.jpg") no-repeat center/cover;
+  }
+  25%{
+    background:url("new.jpg") no-repeat center/cover;
+  }
+  50%{
+    background:url("obra.jpg.jpg") no-repeat center/cover;
+  }
+  75%{
+    background:url("bihar.jpg.jpg") no-repeat center/cover;
+  }
+  to{
+    background:url("bihar.jpg.jpg") no-repeat center/cover;
+  }
+}
+    .note{
+      font-size:16px;
+      position:relative;
+      top:90%;
+      text-align:center;
+      background:#1E8BD8;
+      color:white;
+      text-transform:captalize;
+    }
+    h2{
+      color:red;
+      margin:8px;
+      line-height:1.3;
+      letter-spacing:1.4px;
+      font-weight:700;
+      text-transform:uppercase;
+      font-family:"poppins";
+    }
+    .h2{
+      color:black;
+      margin:8px;
+      line-height:1.3;
+      letter-spacing:1.4px;
+      font-weight:700;
+      text-transform:uppercase;
+      font-family:"poppins";
+    }
+    h3{
+      font-size:23px;
+      text-align:left;
+      margin:4px;
+    }
+    p{
+      text-align:left;
+      font-size:17px;
+      margin:16px;
+      font-family:"roboto";
+      line-height:1.2;
+    }
+    .aside{
+      width:100%;
+      background:#0022CD;
+    }
+    .article1{
+      width:75vw;
+      height:45vh;
+      position:relative;
+      background:#DADADA;
+      color:black;
+      border-radius:20px;
+      box-shadow:5px 5px 10px black,-5px -5px 10px black;
+      
+      margin:40px;
+      transition:0.5s;
+    }
+    .article1:hover{
+      transform: scale(1.1);
+    }
+.article-text{
+  font-size:18px;
+  line-height:1.2;
+  padding:4px;
+  margin-top:-10px;
+}
+.olampic{
+  width:25vw;
+  height:20vw;
+  position:relative;
+  background: transparent;
+  bottom:25px;
+  left:100px;
+}
+h4{
+  font-size:28px;
+  color:red;
+  padding:16px;
+  text-transform:uppercase;
+}
+.article2{
+  background:#FFC800;
+  
+}
+.article3{
+  background:#91D06C;
+  height:48vh;
+}
+.article-text3{
+  color:#4C8CE4;
+}
+.article-text2{
+  color:#003049;
+}
+.article4{
+  background:#81A6C6;
+  height:50vh;
+}
+.article-text4{
+  color:#F3E3D0;
+}
+.given{
+  margin-top:-41px;
+  background:#FFB600;
+}
+.facul1{
+  width:90vw;
+  height:30vh;
+  background:url("new.jpg") no-repeat center/cover;
+  border-radius:20px;
+  margin:24px;
+  box-shadow:5px 0px 10px black;
+}
+.note2{
+  position:relative;
+  bottom:-160px;
+  text-align:center;
+  color:red;
+  font-weight:600;
+}
+.facul2{
+  background:url("facul1.jpg") no-repeat center/cover;
+}
+.facul3{
+  background:url("facul2.webp") no-repeat center/cover;
+}
+.facul4{
+  background:url("facul3.jpg") no-repeat center/cover;
+}
+.facul5{
+  background:url("facul4.jpg") no-repeat center/cover;
+}
+.events{
+  background:#C1C1C1;
+}
+.event{
+  width:90vw;
+  height:35vh;
+  background:url("bihar.jpg.jpg") no-repeat center/cover;
+  margin:16px;
+  border-radius:10px;
+}
+.event2{
+  background:url("event5.jpg") no-repeat center/cover;
+}
+iframe{
+  width:90vw;
+  height:40vh;
+  border-radius:20px;
+}
+button{
+  font-size:25px;
+  padding:8px;
+  margin:32px;
+  background:#E58B00;
+  color:white;
+  border-radius:20px;
+  border:none;
+  transition: 2s;
+}
+button:hover{
+  color:red;
+  background:black;
+  box-shadow:10px 10px 30px blue,-10px 10px 35px blue;
+}
+footer{
+  background:#03004D;
+  color:white;
+  width:100vw;
+  height:120px;
+  text-align:center;
+  position:relative;
+  top:50px;
+  line-height:1.4;
+}
+.footer1{
+  height:20%;
+  border-bottom:1px solid black;
+}
+.note3{
+  text-align:center;
+  margin:4px;
+}
+.button{
+  display:flex;
+  justify-content:center;
+}
